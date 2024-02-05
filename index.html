@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>session-session-1-web-2</title>
+<link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -19,6 +20,43 @@
     </nav>
    </div>
    <!--end make menu -->
+   <!-- make slider -->
+   <div class="slider"><div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./images/IMG_3936.JPG" alt=""></div>
+      <div class="swiper-slide"><img src="./images/IMG_3937.JPG" alt=""></div>
+      <div class="swiper-slide"><img src="./images/IMG_3942.JPG" alt=""></div>
+      <div class="swiper-slide"><img src="./images/IMG_4025.JPG" alt=""></div>
+      <div class="swiper-slide"><img src="./images/IMG_4043.JPG" alt=""></div>
+      <div class="swiper-slide"><img src="./images/IMG_4062.JPG" alt=""></div>
+      <div class="swiper-slide"><img src="./images/IMG_E4040.JPG" alt=""></div>
+      <div class="swiper-slide"><img src="./images/IMG_E4066.JPG" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+   <!--end make slider -->
    <!--end make website -->
+   <script src="./swiper/swiper-bundle.min.js"></script>
+   <script>
+var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+   </script>
 </body>
 </html>
